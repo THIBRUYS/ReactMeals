@@ -6,32 +6,33 @@ const DUMMY_MEALS = [
     {
         id: 'm1',
         name: 'Sushi',
-        description: 'Finest fish and veggies',
+        description: 'Our delicious sushi mix with salmon, tuna and shrimps',
         price: 22.99,
     },
     {
         id: 'm2',
         name: 'Schnitzel',
-        description: 'A german specialty!',
+        description: 'Our famous veal cutlet with a potato salad and cranberry jam',
         price: 16.5,
     },
     {
         id: 'm3',
-        name: 'Barbecue Burger',
-        description: 'American, raw, meaty',
+        name: 'Bacon cheeseburger',
+        description: "Brioche bun, double meat patty, bacon, lettuce, special chef's sauce ",
         price: 12.99,
     },
     {
         id: 'm4',
-        name: 'Green Bowl',
-        description: 'Healthy...and green...',
+        name: "Chef's salad",
+        description: 'Our light salad with fresh vegetables harvested by the chef in our own garden',
         price: 18.99,
     },
 ];
 
 const AvailableMeals = () => {
     const mealsList = DUMMY_MEALS.map((meal) => (
-        <MealItem 
+        <MealItem
+            id={meal.id} 
             key={meal.id} 
             name={meal.name} 
             description={meal.description} 
