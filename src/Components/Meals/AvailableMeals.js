@@ -26,7 +26,7 @@ const DUMMY_MEALS = [
         name: "Chef's salad",
         description: 'Our light salad with fresh vegetables harvested by the chef in our own garden',
         price: 18.99,
-    },
+    }
 ];
 
 const AvailableMeals = () => {
